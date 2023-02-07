@@ -1,2 +1,3 @@
-# survey-form
-A hotel feedback survey built with html and css
+# Survey 
+
+** A responsive hotel feedback survey form built with html and css

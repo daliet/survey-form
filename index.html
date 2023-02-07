@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel feedback survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Guest Feedback Form</h1>
+            <p id="dscription" class="description">
+                We hope you enjoyed your stay with us! To help us get better please take a moment to complete our Survey. Thank you
+            </p>
+        </header>
+      <form action="" id="survey-form" class="survey-form">
+         <div class="label-input">
+                <label for="name" id="name-label">Name</label>
+                <input type="text"
+                name="name"
+                id="name"
+                class="form-label"
+                placeholder="Enter your name" 
+                required>
+
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email"
+                name="email"
+                id="email"
+                class="form-label"
+                placeholder="Enter your e-mail" 
+                required>
+
+                <label for="age" id="age-label">Age</label>
+                <input type="number" min="0" max="99"
+                name="age"
+                id="number"
+                class="form-label"
+                placeholder="Age">
+         </div>
+
+         <div class="dropdown">
+                <label for="favorite">What was your favorite thing about the hotel?</label>
+                <select name="favorite" 
+                    id="favorite" 
+                    class="form-label">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Location">Location</option>
+                    <option value="Cleanliness">Cleanliness</option>
+                    <option value="Facilities">Facilities</option> 
+                    <option value="Comfort">Comfort</option>
+                    <option value="Breakfast">Breakfast</option>
+                </select>
+         </div>       
+
+         <div class="radio-inputs">
+                <p>Would you recommend our Hotel to a friend?</p>
+                <label for="definitely">
+                 <input 
+                        id="definitely" 
+                        name="recommend"
+                        class="input-radio"
+                        type="radio" 
+                        value="definitely">Definitely
+             </label>
+                
+             <label for="maybe">
+                    <input id="maybe" 
+                        name="recommend"
+                        class="input-radio"
+                        type="radio" 
+                        value="maybe">Maybe
+             </label>
+             <label for="not-sure">
+                    <input 
+                            id="not-sure" 
+                            name="recommend"
+                            class="input-radio"
+                            type="radio" 
+                            value="not-sure">Not Sure
+             </label>
+         </div>
+
+         <div class="dropdown">
+             <label for="least-favorite">What was your least favorite thing about the hotel?</label>
+               <select name="least-favorite" 
+                        id="least-favorite"
+                        class="form-label">
+                    <option value="" disabled selected hidden>Select</option>
+                    <option value="Staff">Staff</option>
+                    <option value="Location">Location</option>
+                    <option value="Cleanliness">Cleanliness</option>
+                    <option value="Facilities">Facilities</option>
+                    <option value="Comfort">Comfort</option>
+                    <option value="Breakfast">Breakfast</option>
+             </select>
+         </div>
+
+         <div class="checkbox-inputs">
+                    <p>How would you rate your overall experience?</p>
+                <label for="very-satisfied">
+                    <input 
+                            id="very-satisfied" 
+                            value="very-satisfied"
+                            class="input-checkbox"
+                            name="satisfaction-rate"                  
+                            type="checkbox">Very Satisfied
+                </label>
+                <label for="satisfied">
+                    <input id="satisfied" 
+                            value="satisfied"
+                            class="input-checkbox"
+                            name="satisfaction-rate"                  
+                            type="checkbox">Somewhat Satisfied
+                </label>
+                <label for="neutral">
+                    <input id="neutral" 
+                            value="neutral"
+                            class="input-checkbox"
+                            name="satisfaction-rate" 
+                            type="checkbox">Neither Satisfied nor Disatisfied
+                </label>
+                 <label for="disatisfied">
+                    <input id="disatisfied" 
+                            class="input-checkbox"
+                            value="disatisfied"
+                            name="satisfaction-rate" 
+                            type="checkbox">Disatisfied
+                </label> 
+                 <label for="very-disatisfied">
+                     <input id="very-disatisfied" 
+                            value="very-disatisfied"
+                            class="input-checkbox"
+                            name="satisfaction-rate"
+                            type="checkbox">Very Disatisfied
+                </label>
+         </div>
+
+         <div class="textarea">
+                <p>Please leave your comments below on things you would like us to improve for your next visit</p>
+                <textarea id="comments" 
+                    name="comments"
+                    class="input-textarea"
+                    rows="5" 
+                    cols="80"
+                    placeholder="Enter your comment here..."></textarea>
+         </div>
+
+         <div class="submit-button">
+             <button type="submit" class="btn" value="submit" id="submit">Submit</button>
+         </div>
+          
+        
+        </form>
+
+    </div>
+</body>
+</html>
